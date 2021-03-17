@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev"
   },
+  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LuizCorrea-Dev/ideia1.git"

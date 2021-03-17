@@ -16,3 +16,7 @@ comando : npm i next react react-dom
 
 1 - parar o servidor de desenvolvimento
 2 - dar um git status (pega toas as alteraçoes)
+3 - e comitar na brent principal
+  git add -A
+  git commit -m 'primeira pagina'
+  git push origin main

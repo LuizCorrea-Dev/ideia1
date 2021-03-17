@@ -20,7 +20,7 @@ function Contador() {
   return (
     <div>
       <div>{contador} Likes</div>
-      <button onClick={adicionarContador} >Adicionar</button>
+      <button onClick={adicionarContador}>Adicionar</button>
     </div>
   )
 }
