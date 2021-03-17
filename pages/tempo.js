@@ -8,6 +8,7 @@ function Tempo (props) {
       <div>{props.staticDateString} (estático)</div>
     </div>
   )
+  console.log('🚀Passando pelo Front-End')
 }
 
 export function getStaticProps() { // estes dados não vai para o front-end
@@ -19,6 +20,7 @@ export function getStaticProps() { // estes dados não vai para o front-end
       staticDateString
     }
   }
+  console.log('passando pelo 🧩 getStaticProps')
 }
 
 export default Tempo
