@@ -11,17 +11,21 @@ function Tempo (props) {
   )
 }
 
-export function getStaticProps() { // estes dados não vai para o front-end
-  console.log('passando pelo 🧩 getStaticProps')
-  const staticDate = new Date()
-  const staticDateString = staticDate.toGMTString()
+/*------------------------↓ BACK-END ↓------------------------------------------*/
 
-  return{
-    props: { //este props será injeto do componente TEMPO da página
-      staticDateString
-    },
-    revalidate:1 // tempo em segudos para revalidar os dados da pagina. está página carrega com sucesso .
+  export function getStaticProps() { // estes dados não vai para o front-end
+    console.log('passando pelo 🧩 getStaticProps')
+    const staticDate = new Date()
+    const staticDateString = staticDate.toGMTString()
+
+    return{
+      props: { //este props será injeto do componente TEMPO da página
+        staticDateString
+      },
+      revalidate:1 // tempo em segudos para revalidar os dados da pagina. está página carrega com sucesso .
+    }
   }
-}
+
+/*------------------------↑ BACK-END ↑------------------------------------------*/
 
 export default Tempo
